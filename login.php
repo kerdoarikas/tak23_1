@@ -1,5 +1,4 @@
 <?php include 'elements/head.php'; ?>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <div class="row">
     <form action="db/login.php" method="post">
         <div class="col-12">
