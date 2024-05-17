@@ -19,7 +19,8 @@ include 'elements/head.php';
             </div>
     <div class="d-flex justify-content-between align-items-center">
     <h5 class="m-0">Tere tulemast, kasutajanimi!</h5>
-    <a href="db/logout.php" class="btn btn-dark"></a>
+    <a href="profile.php" class="btn btn-dark">Profiil</a>
+    <a href="db/logout.php" class="btn btn-dark">Logi välja</a>
     </div>
 </div>
 

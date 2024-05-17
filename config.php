@@ -55,6 +55,24 @@ function loginUser($username, $password)
         return false; // Username not found
     }
 }
+// kasutaja kustutamine
+
+function deleteCurrentUser($id)
+{
+    $conn = connect();
+    $sqltask = "DELETE FROM tasks WHERE user_id = :user_id";
+     $sql = "DELETE FROM users WHERE id = :user_id"; 
+        $stmt_ = $conn->prepare($sqltask);
+        $stmt_->bindParam(':user_id', $id);
+        $stmt_->execute();
+         $stmt= $conn->prepare($sql);        
+         $stmt->bindParam(':user_id', $id);        
+         $stmt->execute();
+        disconnect($conn);
+    return true;
+    
+}
+
 
 // Add a new task
 function addTask($user_id, $text, $status)
