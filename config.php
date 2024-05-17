@@ -1,5 +1,6 @@
 <?php
 
+require_once 'db_data.php';
 // Connect to Database
 function connect()
 {
