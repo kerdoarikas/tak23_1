@@ -9,8 +9,8 @@
     <div class="row">
         <div class="col-12">
             <div class="d-flex align-items-center justify-content-center">
-                <a href="login.php" class="btn btn-sm btn-outline-light me-2">
-                <i class="fa-solid fa-lock me-1"></i>
+                <a href="login.php" class="btn btn-lg btn-light">
+                <i class="fa-regular fa-face-grin-tongue-squint me-1"></i>
                     Logi sisse
                 </a>
                 <a href="register.php" class="btn btn-lg btn-light">
