@@ -58,7 +58,10 @@ include 'elements/head.php';
                         <td> <span class="badge <?= $taskBadge ?>"><?= $task['status'] ?></span></td>
                         <td><?= $task['text']?></td>
                         <td><?= $formattedDate?></td>
-                        <td></td>
+                        <td class="text-center">
+                            <a href="edit_task.php?id=<?= urlencode($task['id']) ?>" class="text-primary" title="Edit"><i class="fa-regular fa-pen-to-square"></i></a>
+                            <a href="db/delete_task.php?id=<?= urlencode($task['id']) ?>" class="text-danger" title="Delete"><i class="fa-solid fa-trash"></i></a>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
             <?php endif; ?>
