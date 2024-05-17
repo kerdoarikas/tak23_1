@@ -25,4 +25,15 @@ include 'elements/head.php';
     <a href="db/logout.php" class="btn btn-dark">Logi välja</a>
     </div>
 </div>
-
+<div class="container bg-white rounded p-3 shadow mt-3">
+    <div class="row">
+        <div class="col">Profiili info tuleb siia</div>
+        <div class="col"> Valikud midagi muuta tulevad siia</div>
+    </div>
+    <div class="row">
+        <div class="col"> Kasutajanimi: Taske: </div>
+        <div class="col"> muuda parooli ja siia paneb paroolikastid ja submit buttoni
+            kutsuta konto button siia
+        </div>
+    </div>
+</div>
