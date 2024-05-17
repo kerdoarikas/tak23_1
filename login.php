@@ -1,5 +1,8 @@
 <?php include 'elements/head.php'; ?>
     <div class="row">
+    <div class="d-flex align-items-center justify-content-start">
+                <img src="static/img/logo.png" alt="logo" class="img-fluid">
+            </div>
     <form action="db/login.php" method="post">
         <div class="col-12">
             <div class="w-100 d-flex align-items-center justify-content-center">
