@@ -21,7 +21,7 @@ include 'elements/head.php';
                 <img src="static/img/logo.png" alt="logo" class="img-fluid" style="width: 100px; height: auto;">
             </div>
     <div class="d-flex justify-content-between align-items-center">
-    <h5 class="m-0">Tere tulemast, kasutajanimi!</h5>
+    <h5 class="m-0">Tere tulemast, <?php print($_SESSION['user']['username']);?>!</h5>
     <a href="db/logout.php" class="btn btn-dark">Logi välja</a>
     </div>
 </div>
@@ -31,9 +31,18 @@ include 'elements/head.php';
         <div class="col"> Valikud midagi muuta tulevad siia</div>
     </div>
     <div class="row">
-        <div class="col"> Kasutajanimi: Taske: </div>
-        <div class="col"> muuda parooli ja siia paneb paroolikastid ja submit buttoni
-            kutsuta konto button siia
+        <div class="col"> Kasutajanimi: <?php print_r($_SESSION['user']['username']);?> </div>
+        <div class="col"> muuda parooli: </div>
+        <div class="col"> 
+            <form action="db/deletepro.php" method="post">
+                <h3>Kustuta konto</h3>
+                <div class="form-group">
+                    <label for="password">Parool</label>
+                    <input name="password" type="password" class="form-control" id="password">
+                </div>
+                <button type="submit" class="btn btn-dark mt-3 w-100">Kustuta</button>       
+            </form>
+                        
         </div>
     </div>
 </div>
