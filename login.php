@@ -7,7 +7,7 @@
                     <h3>Sisene</h3>
                     <div class="form-group">
                         <label for="username">Kasutajanimi</label>
-                        <input name="username" type="password" class="form-control" id="username">
+                        <input name="username" type="text" class="form-control" id="username">
                     </div>
                     <div class="form-group">
                         <label for="password">Parool</label>
