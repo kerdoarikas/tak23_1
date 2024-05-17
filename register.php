@@ -17,15 +17,15 @@
                         <input name="username" type="text" class="form-control" id="username">
                     </div>
                     <div class="form-group">
-                        <label for="password1">Parool</label>
-                        <input name="password" type="password" class="form-control" id="password1">
+                        <label for="password">Parool</label>
+                        <input name="password" type="password" class="form-control" id="password">
                     </div>
                     <div class="form-group">
                         <label for="password2">Parool</label>
                         <input name="password" type="password" class="form-control" id="password2">
                         <?php 
-                        if (isset($_POST['password1']) && isset($_POST['password2'])) {
-                            if ($_POST['password1'] != $_POST['password2']) { 
+                        if (isset($_POST['password']) && isset($_POST['password2'])) {
+                            if ($_POST['password'] != $_POST['password2']) { 
                                 print"Paroolid ei kattu";
                             }
                         }
